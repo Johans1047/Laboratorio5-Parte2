@@ -1,0 +1,76 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Mi página web
+    <style>
+        .contador {
+            text-align: center;
+            font-size: 18px;
+            color: red;
+        }
+    </style>
+    <script>
+        function incrementarContador() {
+            var contador = document.getElementById("contador");
+            contador.innerText = parseInt(contador.innerText) + 1;
+        }
+    </script>
+</head>
+<body>
+    <h1>Bienvenido a mi página web</h1>
+
+    <form>
+        <h2>Formulario de contacto</h2>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <textarea name="mensaje" rows="4" cols="40"></textarea>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+
+    <div class="contador">
+        <h2>Contador de visitas:</h2>
+        <p>Visitas totales: <span id="contador">0</span></p>
+        <button onclick="incrementarContador()">Incrementar contador</button>
+    </div>
+
+    <div>
+        <h2>Acerca de nosotros</h2>
+        <p>Somos una empresa dedicada a brindar soluciones tecnológicas de vanguardia.</p>
+    </div>
+
+    <div>
+        <h2>Noticias</h2>
+        <ul>
+            <li>Noticia 1</li>
+            <li>Noticia 2</li>
+            <li>Noticia 3</li>
+        </ul>
+    </div>
+
+    <div>
+        <h2>Tabla</h2>
+        <table>
+            <tr>
+                <td>Nombre</td>
+                <td>Edad</td>
+                <td>País</td>
+            </tr>
+            <tr>
+                <td>Persona 1</td>
+                <td>25</td>
+                <td>España</td>
+            </tr>
+            <tr>
+                <td>Persona 2</td>
+                <td>30</td>
+                <td>México</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
